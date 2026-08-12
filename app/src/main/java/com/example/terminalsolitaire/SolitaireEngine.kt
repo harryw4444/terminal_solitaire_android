@@ -96,6 +96,11 @@ class SolitaireEngine {
                 else -> false
             }
 
+            PileType.FOUNDATION -> when (to.type) {
+                PileType.TABLEAU -> moveFoundationToTableau(from.index, to.index)
+                else -> false
+            }
+
             else -> false
         }
     }
@@ -148,6 +153,20 @@ class SolitaireEngine {
         if (canMoveToFoundation(card, foundation)) {
             foundation.add(column.removeAt(column.size - 1))
             ensureTopCardFaceUp(column)
+            return true
+        }
+        return false
+    }
+
+    private fun moveFoundationToTableau(foundationIndex: Int, tableauIndex: Int): Boolean {
+        val foundation = foundations[foundationIndex]
+        if (foundation.isEmpty()) return false
+
+        val card = foundation.last()
+        val column = tableaus[tableauIndex]
+
+        if (canMoveToTableau(card, column)) {
+            column.add(foundation.removeAt(foundation.size - 1))
             return true
         }
         return false
