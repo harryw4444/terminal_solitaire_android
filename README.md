@@ -3,11 +3,7 @@
 A Solitaire Android Game heavily inspired by [Brian Strauch's Solitaire-TUI](https://github.com/brianstrauch/solitaire-tui) —
 Klondike solitaire rendered in a terminal/ASCII style, built with Kotlin and a custom `Canvas`-drawn `GameView`.
 
-<img width="20%" alt="Screenshot_20260812-222055_cropped" src="https://github.com/user-attachments/assets/34c0d475-a2f5-4d27-997e-46b1c1a19334" />
-<img width="20%" alt="Screenshot_20260812-222150_cropped" src="https://github.com/user-attachments/assets/28c9b05c-72a7-48e0-b349-6c610363b81d" />
-<img width="20%" alt="Screenshot_20260812-222047_cropped" src="https://github.com/user-attachments/assets/9ce1de81-648d-4884-8dda-576a8b9c3ae0" />
-
-## ♥️ Features
+## ♦️ Features
 
 - Classic Klondike solitaire rules
 - Terminal-style ASCII card rendering
@@ -28,7 +24,7 @@ The debug APK will be output to `app/build/outputs/apk/debug/`.
 Open the project folder in Android Studio to build and run directly on a device or emulator
 (minimum SDK 21).
 
-## ♦️ Releases
+## ♥️ Releases
 
 Prebuilt APKs are published under [Releases](../../releases) — grab the latest one there rather
 than building from source if you just want to install the game.
@@ -36,3 +32,10 @@ than building from source if you just want to install the game.
 ## ♣️ Credit
 
 This project is heavily inspired by [brianstrauch/solitaire-tui](https://github.com/brianstrauch/solitaire-tui) (licensed under Apache License 2.0), reimagined as a native Android app. All credit for the original game design and terminal aesthetic goes to Brian Strauch.
+
+## 📱 Screenshots
+
+<img width="25%" alt="Screenshot_20260812-224931" src="https://github.com/user-attachments/assets/02628367-d685-4285-8c97-0bb968919cba" />
+<img width="25%" alt="Screenshot_20260812-222150" src="https://github.com/user-attachments/assets/30aa9e3d-6066-4425-a6db-6f598393c8d5" />
+
+
