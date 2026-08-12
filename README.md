@@ -34,8 +34,10 @@ than building from source if you just want to install the game.
 This project is heavily inspired by [brianstrauch/solitaire-tui](https://github.com/brianstrauch/solitaire-tui) (licensed under Apache License 2.0), reimagined as a native Android app. All credit for the original game design and terminal aesthetic goes to Brian Strauch.
 
 ## 📱 Screenshots
-
-<img width="25%" alt="Screenshot_20260812-224931" src="https://github.com/user-attachments/assets/02628367-d685-4285-8c97-0bb968919cba" />
+<img width="25%" alt="Screenshot_20260812-225915" src="https://github.com/user-attachments/assets/de2fe042-666b-46b5-bc48-3bffc87a4db4" />
 <img width="25%" alt="Screenshot_20260812-222150" src="https://github.com/user-attachments/assets/30aa9e3d-6066-4425-a6db-6f598393c8d5" />
+
+
+
 
 
