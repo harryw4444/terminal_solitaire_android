@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             textSize = 18f
             typeface = Typeface.MONOSPACE
             gravity = Gravity.CENTER
-            setPadding(0, 0, 0, 12)
+            setPadding(0, 0, 0, 24)
         }
 
         titleTextView = TextView(this).apply {
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             textSize = 18f
             typeface = Typeface.MONOSPACE
             gravity = Gravity.CENTER
-            setPadding(0, 64, 0, 16)
+            setPadding(0, 16, 0, 16)
             visibility = View.GONE
             setOnClickListener {
                 menuLayout.visibility = View.GONE
@@ -209,9 +209,12 @@ class MainActivity : AppCompatActivity() {
         if (hasActiveGame) {
             resumeOption.visibility = View.VISIBLE
             resumeOption.text = "$n. RESUME GAME"
+            resumeOption.setPadding(0, 64, 0, 16)
+            startOption.setPadding(0, 16, 0, 16)
             n++
         } else {
             resumeOption.visibility = View.GONE
+            startOption.setPadding(0, 64, 0, 16)
         }
 
         startOption.text = "$n. START NEW GAME"
