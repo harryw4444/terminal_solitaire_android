@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
 
         // Small credit line, anchored to the bottom of the screen
         creditTextView = TextView(this).apply {
-            text = "A port of Brian Strauch's Solitaire-TUI"
+            text = "Inspired by Brian Strauch's Solitaire-TUI"
             textSize = 12f
             typeface = Typeface.MONOSPACE
             gravity = Gravity.CENTER
