@@ -1,6 +1,6 @@
 # 🃏 Terminal Solitaire (Android)
 
-A Solitaire Android Game heavily inspired by [Brian Strauch's Solitaire-TUI](https://github.com/brianstrauch/solitaire-tui).
+A Solitaire Android Game heavily inspired by [Brian Strauch's Solitaire-TUI](https://github.com/brianstrauch/solitaire-tui).<br>
 Klondike solitaire rendered in a terminal/ASCII style, built with Kotlin and a custom `Canvas`-drawn `GameView`.
 
 ## ♦️ Features
