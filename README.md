@@ -3,6 +3,10 @@
 A Solitaire Android Game heavily inspired by [Brian Strauch's Solitaire-TUI](https://github.com/brianstrauch/solitaire-tui) —
 Klondike solitaire rendered in a terminal/ASCII style, built with Kotlin and a custom `Canvas`-drawn `GameView`.
 
+<img width="20%" alt="Screenshot_20260812-222055_cropped" src="https://github.com/user-attachments/assets/34c0d475-a2f5-4d27-997e-46b1c1a19334" />
+<img width="20%" alt="Screenshot_20260812-222150_cropped" src="https://github.com/user-attachments/assets/28c9b05c-72a7-48e0-b349-6c610363b81d" />
+<img width="20%" alt="Screenshot_20260812-222047_cropped" src="https://github.com/user-attachments/assets/9ce1de81-648d-4884-8dda-576a8b9c3ae0" />
+
 ## ♥️ Features
 
 - Classic Klondike solitaire rules
