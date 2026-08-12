@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var menuLayout: LinearLayout
     private lateinit var gameView: GameView
+    private lateinit var suitsTextView: TextView
     private lateinit var titleTextView: TextView
     private lateinit var resumeOption: TextView
     private lateinit var startOption: TextView
@@ -51,7 +52,17 @@ class MainActivity : AppCompatActivity() {
         menuLayout = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER
-            setPadding(64, 64, 64, 64)
+            setPadding(64, 64, 64, 320)
+        }
+
+        suitsTextView = TextView(this).apply {
+            // U+FE0E forces "text presentation" rather than colored emoji glyphs,
+            // so setTextColor() below actually applies to these symbols.
+            text = "♠\uFE0E ♥\uFE0E ♦\uFE0E ♣\uFE0E"
+            textSize = 18f
+            typeface = Typeface.MONOSPACE
+            gravity = Gravity.CENTER
+            setPadding(0, 0, 0, 12)
         }
 
         titleTextView = TextView(this).apply {
@@ -103,6 +114,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        menuLayout.addView(suitsTextView)
         menuLayout.addView(titleTextView)
         menuLayout.addView(resumeOption)
         menuLayout.addView(startOption)
@@ -110,7 +122,7 @@ class MainActivity : AppCompatActivity() {
 
         // Small credit line, anchored to the bottom of the screen
         creditTextView = TextView(this).apply {
-            text = "Inspired by Brian Strauch's Solitaire-TUI"
+            text = "A port of Brian Strauch's Solitaire-TUI"
             textSize = 12f
             typeface = Typeface.MONOSPACE
             gravity = Gravity.CENTER
@@ -219,6 +231,7 @@ class MainActivity : AppCompatActivity() {
         startOption.setTextColor(fgColor)
         darkModeOption.setTextColor(fgColor)
         creditTextView.setTextColor(fgColor)
+        suitsTextView.setTextColor(fgColor)
 
         refreshMenuLabels()
     }
